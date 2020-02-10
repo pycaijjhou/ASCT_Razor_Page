@@ -12,7 +12,7 @@ h1 {
 
 body {
     width: 70%;
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
@@ -26,7 +26,7 @@ body {
 
 
   
-  .container {
+  .modified_container {
     max-width: 200px;
     margin: 0 auto;
   }
