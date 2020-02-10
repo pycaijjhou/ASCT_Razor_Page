@@ -1,0 +1,112 @@
+﻿@page
+@model AdminUIModel
+@{
+    ViewData["Title"] = "Admin Portal";
+}
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Alaska Airlines Software Configuration Tool</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/ASCT_Style.css" />
+</head>
+<body>
+    <h1 id="title">Alaska Airlines Software Configuration <b>Admin</b> Tool</h1>
+    <br>
+    <div id="fleet-select">
+        <button type="button" class="btn btn-outline-primary">Boeing</button>
+        <button type="button" class="btn btn-outline-primary">Airbus</button>
+    </div>
+    <br>
+    <div id="tail-number-section">
+        <form>
+            <div class="form-group">
+                <!-- Design choice; label or no label for tail number input?-->
+                <label for="tail-number">Tail Number</label>
+                <input type="text" class="form-control" id="tail-number" placeholder="ex: 224AS">
+            </div>
+        </form>
+    </div>
+
+    <br />
+    <div id="LRU-name-section">
+        <form>
+            <div class="form-group">
+                <!-- Design choice; label or no label for tail number input?-->
+                <label for="LRU-Name">LRU Name</label>
+                <input type="text" class="form-control" id="LRU-name" placeholder="ex: Attendant Control Panel">
+            </div>
+        </form>
+    </div>
+
+    <br />
+    <div id="LRU-part-number-section">
+        <form>
+            <div class="form-group">
+                <!-- Design choice; label or no label for tail number input?-->
+                <label for="system-name">LRU P/N</label>
+                <input type="text" class="form-control" id="LRU-part-number" placeholder="ex: 115E1670G18">
+            </div>
+        </form>
+    </div>
+    <br />
+
+    <div id="software-name-section">
+        <form>
+            <div class="form-group">
+                <!-- Design choice; label or no label for tail number input?-->
+                <label for="system-name">S/W Name</label>
+                <input type="text" class="form-control" id="software-name" placeholder="ex: OPS">
+            </div>
+        </form>
+    </div>
+    <br />
+
+    <div id="software-part-number-section">
+        <form>
+            <div class="form-group">
+                <!-- Design choice; label or no label for tail number input?-->
+                <label for="system-name">S/W P/N</label>
+                <input type="text" class="form-control" id="software-part-number" placeholder="ex: 2316BPS03P05">
+            </div>
+        </form>
+    </div>
+
+    <br />
+    <div id="system-name-section">
+        <form>
+            <div class="form-group">
+                <!-- Design choice; label or no label for tail number input?-->
+                <label for="system-name">System Name</label>
+                <input type="text" class="form-control" id="system-name" placeholder="ex: FMC">
+            </div>
+        </form>
+    </div>
+
+    <br />
+    <div id="pre-post-section">
+        <input type="radio" name="pre-post-condition" value="Pre">Pre<br>
+        <input type="radio" name="pre-post-condition" value="Pre">Pre<br>
+        <input type="radio" name="pre-post-condition" value="None">None<br>
+    </div>
+
+    <br />
+    <div id="EC-number-section">
+        <form>
+            <div class="form-group">
+                <!-- Design choice; label or no label for tail number input?-->
+                <label for="system-name">E/C Number</label>
+                <input type="text" class="form-control" id="EC-number" placeholder="ex: SB737-34-2600-NG-1">
+            </div>
+        </form>
+    </div>
+    <br />
+    <div id="submit">
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </div>
+</body>
+</html>

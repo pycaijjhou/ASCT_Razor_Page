@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Logging;
+
+namespace ASCT_Razor_Page.Pages
+{
+    public class AdminUIModel : PageModel
+    {
+        private readonly ILogger<AdminUIModel> _logger;
+
+        public AdminUIModel(ILogger<AdminUIModel> logger)
+        {
+            _logger = logger;
+        }
+
+        public void OnGet()
+        {
+
+        }
+    }
+}

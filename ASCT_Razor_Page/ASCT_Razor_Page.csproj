@@ -6,4 +6,10 @@
 
 
 
+  <ItemGroup>
+    <None Remove="Pages\EmptyHtmlFile.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Pages\Index.cshtml" />
+  </ItemGroup>
 </Project>
