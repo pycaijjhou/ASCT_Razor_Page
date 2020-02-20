@@ -21,5 +21,18 @@ namespace ASCT_Razor_Page.Pages
         {
 
         }
+
+        // property to record the user's input in the AdminUI
+        [BindProperty]
+        public Aircraft Unit { get; set; }
+
+        // when the post request is sent (submit is clicked)
+        public IActionResult OnPost() {
+            if (ModelState.Invalid == false) {
+                return Page;
+            }
+
+            return RedirectToPage("/AdminUI");
+        }
     }
 }
