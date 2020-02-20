@@ -27,7 +27,7 @@ namespace ASCT_Razor_Page.Pages
         // property to output the database fetch result to the user
         // in the TechnicianUI 
         [BindProperty]
-        public Aircraft Unit { get; set; }
+        public Aircrafts Unit { get; set; }
 
         public void OnGet()
         {
