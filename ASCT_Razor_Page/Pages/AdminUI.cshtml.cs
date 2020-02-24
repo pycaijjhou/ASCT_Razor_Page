@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using ASCT_Razor_Page.Models;
 
-
 namespace ASCT_Razor_Page.Pages
 {
     public class AdminUIModel : PageModel
@@ -26,17 +25,15 @@ namespace ASCT_Razor_Page.Pages
 
         // property to record the user's input in the AdminUI
         [BindProperty]
-        public Aircrafts Unit { get; set; }
-
-
+        public Aircraft Unit { get; set; }
 
         // when the post request is sent (submit is clicked)
-        public IActionResult OnPost(String TAIL_NUM) {
-            if (ModelState.IsValid == true) {
-                return null;            // no way to debug CAUTION
+        public IActionResult OnPost()
+        {
+            if (ModelState.IsValid == false)
+            {
+                return Page();
             }
-
-            //ViewData["TAIL_NUM"] = TAIL_NUM;
 
             return RedirectToPage("/AdminUI");
         }
