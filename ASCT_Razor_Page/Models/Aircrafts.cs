@@ -3,15 +3,15 @@ namespace ASCT_Razor_Page.Models
 {
     public class Aircrafts
     {
-        public string TAIL_NUM { get; set; }
+        public string Tail_Number { get; set; }
 
-        public string LRU_NAME { get; set; }
+        public string LRU_Name { get; set; }
 
-        public string LRU_PN { get; set; }
+        public string LRU_Part_Number { get; set; }
 
-        public string SOFTWARE_NAME { get; set; }
+        public string Software_Name { get; set; }
 
-        public string SOFTWARE_PN { get; set; }
+        public string Software_Part_Number { get; set; }
 
         public string EC_NUM { get; set; }
 
